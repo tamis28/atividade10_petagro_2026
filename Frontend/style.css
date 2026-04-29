@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.app-container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar{
+    width: 240px;
+    padding: 24px;
+    background-color: #43b823;
+    position: fixed;
+    height: 100%;
+}
+
+img{
+    margin: 0 15px;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+
+.logo{
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+button{
+    margin: 0 15px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    background: #d0d0d0;
+    color: #464646;
+    border-radius: 100px;
+}
+button:hover{
+    opacity: 0.9;
+}
+
+.search-input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #d0d0d0;
+    color: #000000;
+    outline: none;
+}
+
+.main-content{
+    flex: 1;
+    margin-left: 240px;
+    padding: 30px;
+    background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+    color: #000000;
+    padding-bottom: 120px;
+}
+
+.card {
+    background-color: var(--p2);
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap:10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+
+    img {
+        width: 100%;
+        height: 80%;
+        border-radius: 50%;
+    }
+
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d0d0d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.janela {
+    display: flex;
+    flex-direction: column;
+    background-color: #43b823;
+    width: 350px;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+}
+
+.oculto {
+    display: none;
+}
+
+#imagemProduto{
+    width: 80%;
+    height:70%;
+}
+
+input{
+    padding: 5px 12px;
+    border: none; border-radius: 18px;
+    font-size: 16px;
+}
+textarea{
+    padding: 5px 12px;
+    border: none; border-radius: 18px;
+    font-size: 16px;
+}
+select{
+    padding: 5px 12px;
+    border: none; border-radius: 18px;
+    font-size: 16px;
+}

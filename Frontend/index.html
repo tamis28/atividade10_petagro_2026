@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetAgro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <img src="https://media.istockphoto.com/id/1145393791/vector/farm-animals-sign.jpg?s=612x612&w=0&k=20&c=TkDlbOcvUb6d7jGpZtmzlFNqYhPNGiakfPVnJCL9H6c=" id="logo" height="65px" width="65px" >
+            <h2 class="logo">PetAgro</h2>
+            <nav class="menu">
+                <input type="text" id="busca" placeholder="Buscar Produto..." class="search-input">
+            </nav>
+            <br>
+            <button onclick="cadastro.classList.remove('oculto')">+ Produto</button>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Resultado da Busca</h1>
+            </header>
+        </main>
+    </div>
+    <div id="cadastro" class="modal oculto">
+
+        <div class="janela">
+
+            <h2>Adicionar Produto</h2>
+
+            <form id="formCad">
+
+                <label>Nome do Produto</label>
+                <br>
+                <input type="text" id="produto" required>
+                <br>
+                <br>
+
+                <label>Descrição</label>
+                <textarea id="descricao" required></textarea>
+                <br>
+                <br>
+
+                <label>Custo</label>
+                <input type="number" id="preco">
+                <br>
+                <br>
+
+                <label>Tipo</label>
+                <select id="tipo">
+                    <option value="COMIDA">Comida</option>
+                    <option value="BEBIDA">Bebida</option>
+                    <option value="PRODUTO">Produto</option>
+                </select>
+                <br>
+                <br>
+
+                <label>URL da imagem</label>
+                <input type="text" id="Imagem">
+                <br>
+                <br>
+
+                <button type="reset" onclick="cadastro.classList.add('oculto')">Cancelar</button>
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="detalhes" class="modal oculto">
+        <div class="janela">
+            <h2 id="produtoProduto"></h2>
+            <img id="imagemProduto">
+
+            <label>Nome do Produto</label>
+            <input type="text" id="produtoEdit" required>
+
+            <label>Descrição</label>
+            <textarea id="descricaoEdit" required></textarea>
+
+            <label>Preço</label>
+            <input type="number" id="precoEdit">
+
+            <label>Tipo</label>
+            <select id="tipoEdit">
+                <option value="COMIDA">Comida</option>
+                <option value="BEBIDA">Bebida</option>
+                <option value="PRODUTO">Produto</option>
+            </select>
+
+            <label>URL da imagem</label>
+            <input type="text" id="imagemEdit">
+
+
+            <br><br>
+
+            <button onclick="salvarEdicao()">Salvar</button>
+            <button onclick="excluirProdutoAtual()">Excluir</button>
+            <button onclick="detalhes.classList.add('oculto')">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
