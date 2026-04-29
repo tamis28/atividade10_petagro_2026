@@ -20,5 +20,5 @@ Atividade do curso técnico em desenvolvimento de sistema que consistia em criar
 ```
 
 ## Prints
-|![Print01](./assets/info/print01.png) | ![Print02](./assets/info/print02.png) | ![Print03](./assets/info/print03.png)|
+|![Print01](Backend/assets/info/print01.png) | ![Print02](Backend/assets/info/print02.png) | ![Print03](Backend/assets/info/print03.png)|
 |-|-|-|
